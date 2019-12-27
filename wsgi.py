@@ -3,7 +3,7 @@ import MySQLdb
 
 application = Flask(__name__, template_folder='templates')
 
-@application.route('/')
+@application.route('/',methods=['GET','POST'])
 def index():
   return render_template('index.html')
 
